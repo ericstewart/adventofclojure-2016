@@ -1,36 +1,16 @@
-# adventofcode-2016
+# adventofcode-2016 (Clojure style)
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+These are my solutions for [Advent of Code 2016](http://adventofcode.com) in [Clojure.](https://clojure.org)
 
 ## Usage
 
-FIXME: explanation
+These exercises are implemented to be run as a combination of tests (`lein test`)
+and using a clojure REPL (`lein repl`).
 
-    $ java -jar adventofcode-2016-0.1.0-standalone.jar [args]
+The solutions themselves are in the source directory with typically a namespace per day/problem.
 
-## Options
+Supporting tests are in the tests directory, while my personal problem inputs are in the resources directory. Each participant gets unique inputs so these aren't directly useful to anyone but me.
 
-FIXME: listing of options this app accepts.
+## Approach
 
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+I typically solve these initially with minimal research into other people's solutions. After this naïve approach, with the support of some tests, I usually do some minor refactoring on my own and possibly additional refactoring after reading through solutions from others. I think learning how to refactor a language is as important as initially creating a solution.
