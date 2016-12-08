@@ -4,7 +4,9 @@
             [clojure.java.io :as io]))
 
 ;; Day 1 problem for Advent of Code 2016
-;; Based on https://en.wikipedia.org/wiki/Taxicab_geometry
+;; http://adventofcode.com/2016/day/1  
+;;
+;; Using https://en.wikipedia.org/wiki/Taxicab_geometry
 
 
 
@@ -16,6 +18,7 @@
 
 (defn new-direction
   [current-direction movement]
+  "Determine the new direction after movement"
   (let [movement-modifier (if (= \R
                                  movement)
                             1
@@ -29,6 +32,8 @@
 
 (defn new-coordinates
   [[current-x current-y] direction distance]
+  "Return a list of coordinates travelled from a current location
+   given direction and distance"
   (let [modifier-tuple (case direction
                          :north [0 distance]
                          :east  [distance 0]
@@ -53,6 +58,7 @@
 
 (defn move
   [current-position movement]
+  "Apply movement instructions and return path travelled"
   (let [direction (new-direction (first (last current-position))
                                  (first movement))
         distance (string->integer (apply str (rest movement)))]
