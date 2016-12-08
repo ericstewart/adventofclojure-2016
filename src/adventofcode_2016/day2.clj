@@ -11,8 +11,6 @@
    7 [-1 -1] 8 [0 -1] 9 [1 -1]
    })
 
-;; (def diamond-keypad-map {})
-
 (def diamond-keypad-map
   {                    1  [0 2]
             2  [-1 1]  3  [0 1]  4  [1 1]
